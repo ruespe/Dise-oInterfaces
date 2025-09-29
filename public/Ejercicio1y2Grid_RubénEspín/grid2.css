@@ -1,0 +1,155 @@
+/*#principal {
+    max-width: 800px;
+    margin: auto;
+    border: solid 1px black;
+}
+*/
+.s1 {
+    grid-area: s1;
+}
+
+.s2 {
+    grid-area: s2;
+}
+
+.s3 {
+    grid-area: s3;
+}
+
+.s4 {
+    grid-area: s4;
+}
+
+.s5 {
+    grid-area: s5;
+}
+
+.s6 {
+    grid-area: s6;
+}
+
+.s7 {
+    grid-area: s7;
+}
+
+.s8 {
+    grid-area: s8;
+}
+
+.right {
+    grid-area: right;
+}
+
+.left {
+    grid-area: left;
+}
+
+#amarillo {
+    grid-area: amarillo;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(117, 124, 158);
+    margin-bottom: 20px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.right {
+    background-color: rgb(49, 140, 201);
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.left {
+    background-color: rgb(95, 206, 95);
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#amarillo {
+    background-color: yellow;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "s1 s2 s3 s4"
+        "s5 s6 s7 s8"
+    ;
+}
+
+#amarillo div {
+    border: solid 1px black;
+}
+
+@media (max-width:1024px) {
+    #principal {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "amarillo amarillo amarillo"
+            "right right right"
+            "footer footer footer";
+    }
+
+    #amarillo {
+        display: grid;
+        grid-template-areas:
+            "s1 s2 s3 s4"
+            "s5 s6 s7 s8";
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px ;
+        gap: 15px;
+    }
+
+    .right {
+        height: 200px;
+    }
+
+    .left {
+        height: 200px;
+    }
+
+}
+
+
+
+@media (min-width:1024px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+            "left amarillo right";
+        gap: 5px;
+        align-items: stretch;
+    }
+
+    #amarillo {
+        display: grid;
+        grid-template-areas:
+            "s2 s1 s1 s1 s1"
+            "s3 s1 s1 s1 s1"
+            "s4 s5 s6 s7 s8";
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        gap: 15px;
+    }
+
+}

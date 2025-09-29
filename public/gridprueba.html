@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Grid corregido</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, sans-serif; }
+
+  /* contenedor principal (mobile-first: todo apilado) */
+  #principal {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "amarillo"
+      "left"
+      "right"
+      "footer";
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  header { grid-area: header; background: rgb(117,124,158); color: #fff; padding: 10px; height: 80px; }
+  .left   { grid-area: left;  background: rgb(95,206,95); color: #fff; padding: 10px; } /* SIN height fijo */
+  .right  { grid-area: right; background: rgb(49,140,201); color: #fff; padding: 10px; } /* SIN height fijo */
+  footer  { grid-area: footer; background: #000; color: #fff; padding: 10px; height: 80px; }
+
+  /* grid interno amarillo (mobile: 2 filas x 4 cols) */
+  #amarillo {
+    grid-area: amarillo;
+    background: yellow;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "s1 s2 s3 s4"
+      "s5 s6 s7 s8";
+    /* cada caja controla su altura interna */
+  }
+
+  /* estilo cajas */
+  #amarillo > div {
+    border: 1px solid #000;
+    min-height: 120px;
+    display: flex;
+    align-items: flex-start;
+    padding: 6px;
+    font-weight: bold;
+  }
+
+  /* --- LAYOUT PARA PANTALLAS AMPLIAS --- */
+  @media (min-width: 1024px) {
+    /* #principal pasa a 3 columnas: aside-left | amarillo | aside-right */
+    #principal {
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-areas:
+        "header header header"
+        "left amarillo right"
+        "footer footer footer";
+      grid-auto-rows: auto;     /* fila central crecerá según el contenido más alto */
+      align-items: stretch;     /* hace que left/right se estiren a la altura de la fila */
+      gap: 15px;
+    }
+
+    /* grid interno amarillo: filas/columnas coherentes con grid-template-areas */
+    #amarillo {
+      grid-template-columns: 200px repeat(4, 1fr); /* 5 columnas: 200px + 4 fr */
+      grid-template-areas:
+        "s2 s1 s1 s1 s1"
+        "s3 s1 s1 s1 s1"
+        "s4 s5 s6 s7 s8";
+      grid-template-rows: 200px 200px 200px; /* si quieres filas fijas; o usa auto */
+      gap: 15px;
+      padding: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="principal">
+  <header>header</header>
+
+  <aside class="left">aside left (se estira)</aside>
+
+  <div id="amarillo">
+    <div class="s2">S2</div>
+    <div class="s1">S1</div>
+    <div class="s3">S3</div>
+    <div class="s4">S4</div>
+    <div class="s5">S5</div>
+    <div class="s6">S6</div>
+    <div class="s7">S7</div>
+    <div class="s8">S8</div>
+  </div>
+
+  <aside class="right">aside right (se estira)</aside>
+
+  <footer>footer</footer>
+</div>
+
+</body>
+</html>
