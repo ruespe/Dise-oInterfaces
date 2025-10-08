@@ -44,11 +44,14 @@
         grid-area: form;
     }
 
-    #enlances {
+    #enlaces {
         grid-area: enlaces;
     }
+    #footer {
+        grid-area: footer;
+    }
 
-    body {
+    main {
         display: grid;
         grid-template-areas:
             "header"
@@ -57,7 +60,9 @@
             "article1"
             "article2"
             "article3"
-
+            "contenido"
+            "form enlances"
+            "footer"
         ;
     }
 }
