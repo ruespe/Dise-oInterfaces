@@ -1,14 +1,15 @@
-@media (max-width:768px) {
     header {
         grid-area: header;
     }
 
-    #banner {
-        grid-area: banner;
+    #section1 {
+        grid-area: section1;
     }
-
-    #tittle {
-        grid-area: tittle;
+    #left1{
+        grid-area: bannerleft;
+    }
+    #right1 {
+        grid-area: bannerright;
     }
 
     #articles {
@@ -32,11 +33,14 @@
 
     }
 
-    #contenido {
-        grid-area: contenido;
+    #section2 {
+        grid-area: section2;
+    }
+    #left2 {
+        grid-area: left2;
     }
 
-    .right2 {
+    #right2 {
         grid-area: right2;
     }
 
@@ -47,26 +51,62 @@
     #enlaces {
         grid-area: enlaces;
     }
+
     #footer {
         grid-area: footer;
     }
 
-    main {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "banner"
-            "tittle"
-            "article1"
-            "article2"
-            "article3"
-            "contenido"
-            "form enlances"
-            "footer"
-        ;
+    @media (max-width: 768px) {
+        body {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "left1"
+                "right1"
+                "article1"
+                "article2"
+                "article3"
+                "left2"
+                "right2"
+                "footer"
+            ;
+        }
     }
-}
 
-@media(max-width:1024px) {}
+    @media (max-width: 1024px) {
+        body {
+            background-color: hotpink;
+        }
+    }
 
-@media(min-width:1024px) and (max-width:1240px) {}
+    @media (min-width: 1025px) and (max-width: 1240px) {
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "section1"
+                "articles"
+                "section2"
+                "footer"
+            ;
+        }
+        #section1{
+            display: grid;
+            grid-template-areas: 
+                "bannerleft bannerright"
+            ;
+        }
+        #articles{
+            display: grid;
+            grid-template-areas: 
+            "article1 article2 article3"
+            ;
+        }
+        #section2{
+            display: grid;
+            grid-template-areas: 
+                "left2 right2"
+            ;
+        }
+    }
+
