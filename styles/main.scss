@@ -2,3 +2,27 @@
 @use 'base/index' as *;
 @use 'layout/index' as *;
 @use 'vendors/index' as *;
+@import '/styles/abstracts/variables';
+
+header{
+    background-color: var(--primary-color);
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+header{
+padding: 0px 30px;
+}
+main{
+padding: 0px 30px;
+}
+footer{
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+}
