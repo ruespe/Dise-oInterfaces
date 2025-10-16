@@ -2,10 +2,27 @@
 @use 'base/index' as *;
 @use 'layout/index' as *;
 @use 'vendors/index' as *;
-@import '/styles/abstracts/variables';
+//@use 'styles/abstracts/variables' as *;
+@font-face {
+  font-family: 'ArialMT';
+  src: url('fonts/arial-mt/arialmt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Century';
+  src: url('fonts/CenturyGothic/centurygothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 header{
-    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background-color: var(--primary-color);  
+    font-family: 'ArialMT';
 }
 nav ul{
     display: flex;
@@ -18,9 +35,37 @@ ul li{
 header{
 padding: 0px 30px;
 }
+
+
 main{
 padding: 0px 30px;
 }
+
+.naranja-chillon{
+    color: var(--naranja-chillon);
+}
+
+#articles{
+    display: flex;
+    gap: 25px;
+}
+div.titulo p{
+    font-size: 20px;
+    color: #7e7e7e;
+    font-family: 'Century';
+}
+.cuerpoArticulo{
+    background-color: var(--blanco);
+    padding: 20px 10px;
+}
+div.contenidoArticulo{
+    display: flex;
+}
+aside span.negrita{
+    font-weight: bold;
+}
+
+
 footer{
     padding: 0px 30px;
     display: flex;

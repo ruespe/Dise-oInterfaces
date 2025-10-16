@@ -10,11 +10,12 @@
 
 <body>
     <header id="header">
-        <img src="images/INFOTECH - Logo.png" alt="Logo">
-        <img src="images/Eye - O.png" alt="Eye">
+        <div id="logo"> <img src="images/INFOTECH - Logo.png" alt="Logo">
+            <img src="images/Eye - O.png" alt="Eye">
+        </div>
         <nav>
             <ul>
-                <li>Home</li>
+                <li><button>Home</button></li>
                 <li>About Us</li>
                 <li>Solutions</li>
                 <li>Clients</li>
@@ -27,7 +28,8 @@
             <aside id="left1"><img src="images/Content Slider.png" alt="Banner"></aside>
             <aside id="right1">
                 <h1>ADVANCE YOUR BUSINESS WITH
-                    ONLINE PRESENCE</h1>
+                    <span class="naranja-chillon">ONLINE PRESENCE</span>
+                </h1>
                 <p>Many desktop publishing packages and web page editors
                     now use Lorem Ipsum as their default. </p>
                 <p>Talk to us if you are looking for business savvy online solutions rather than
@@ -36,55 +38,67 @@
             </aside>
         </section>
         <div id="articles">
-            <article id="article1">
+            <article id="article1" class="article">
                 <div class="titulo">
                     <p>Web Designing</p>
                 </div>
-                <div class="contenidoArticulo">
-                    <div class="imagen"><img src="images/Web Design ICON.png" alt="Design"></div>
-                    <span>Design3Edge.com</span>
-                    <p>Talk to us if you are looking for business
-                        savvy online solutions rather than
-                        possibilities of <span>technology.</span></p>
-                </div>
-                <div class="readMore">
-                    <p>Read More</p>
+                <div class="cuerpoArticulo">
+                    <div class="contenidoArticulo">
+                        <div class="imagen"><img src="images/Web Design ICON.png" alt="Design"></div>
+                        <aside>
+                        <span class="negrita">Design3Edge.com</span>
+                        <p>Talk to us if you are looking for business
+                            savvy online solutions rather than
+                            possibilities of <span>technology.</span></p>
+                        </aside>
+                    </div>
+                    <div class="readMore">
+                        <p class="naranja-chillon">Read More</p>
+                    </div>
                 </div>
             </article>
-            <article id="article2">
+            <article id="article2" class="article">
                 <div class="titulo">
                     <p>Solutions</p>
                 </div>
+                <div class="cuerpoArticulo">
                 <div class="contenidoArticulo">
                     <div class="imagen"><img src="images/Solution ICON.png" alt="Solution"></div>
-                    <span>Design3Edge.com</span>
+                    <aside>
+                    <span class="negrita">Design3Edge.com</span>
                     <p>Talk to us if you are looking for business
                         savvy online solutions rather than
-                        possibilities of <span>technology.</span></p>
+                        possibilities of <span>technology.</span></p>                               
+                    </aside>
                 </div>
                 <div class="readMore">
-                    <p>Read More</p>
+                    <p class="naranja-chillon">Read More</p>
+                </div>
                 </div>
             </article>
-            <article id="article3">
+            <article id="article3" class="article">
                 <div class="titulo">
                     <p>Testimonials</p>
                 </div>
+            <div class="cuerpoArticulo">
                 <div class="contenidoArticulo">
                     <div class="imagen"><img src="images/Testimonial ICON.png" alt="Testimonial"></div>
-                    <span>Design3Edge.com</span>
+                    <aside>
+                    <span class="negrita">Design3Edge.com</span>
                     <p>Talk to us if you are looking for business
                         savvy online solutions rather than
                         possibilities of <span>technology.</span></p>
+                    </aside>
                 </div>
                 <div class="readMore">
-                    <p>Read More</p>
+                    <p class="naranja-chillon">Read More</p>
                 </div>
+            </div>
             </article>
         </div>
         <section id="section2">
             <aside id="left2">
-                <h2>Welcome to Infotech</h2>
+                <h2 class="naranja-chillon">Welcome to Infotech</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar nisi eu enim facilisis dapibus.
                     Duis viverra turpis vitae dui tincidunt eleifend. Etiam sodales, neque in dignissim dictum, dui
                     libero
@@ -104,7 +118,7 @@
             dignissim.
             <aside id="right2">
                 <aside id="form">
-                    <h2>Subscribe by Email</h2>
+                    <h2 class="naranja-chillon">Subscribe by Email</h2>
                     <form action="POST">
                         <label for="Email" id="Email">Email <Address></Address></label>
                         <input type="text">
@@ -112,7 +126,7 @@
                     </form>
                 </aside>
                 <aside id="enlaces">
-                    <h2>Follow us on</h2>
+                    <h2 class="naranja-chillon">Follow us on</h2>
                     <nav>
                         <ul>
                             <li><a href=""><img src="images/Twitter.png" alt=""></a></li>
@@ -136,7 +150,9 @@
                 </ul>
             </nav>
         </aside>
-        <aside class="footerright"><p>© Copyright Your <span>Site Name. Dot Com.</span> All Rights Reserved </p></aside>
+        <aside class="footerright">
+            <p>© Copyright Your <span class="naranja-chillon">Site Name. Dot Com.</span> All Rights Reserved </p>
+        </aside>
 
     </footer>
 </body>
