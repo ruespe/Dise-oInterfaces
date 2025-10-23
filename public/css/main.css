@@ -478,12 +478,57 @@ header {
   padding: 0px 30px;
 }
 
+section#section1 {
+  background-color: var(--blanco);
+}
+
+aside#right1 h1 {
+  margin-bottom: 0px;
+}
+
+aside#right1 p#uno {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+aside#right1 p#dos {
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+
 main {
   padding: 0px 30px;
 }
 
 .naranja-chillon {
   color: var(--naranja-chillon);
+}
+
+.article {
+  border-radius: 6px;
+  -webkit-filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+          filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+  border: 1px solid #e1e0e0;
+}
+
+.article img {
+  padding-right: 20px;
+}
+
+p.naranja-chillon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+div.titulo p {
+  padding-left: 10px;
+  margin: 10px 10px;
+  font-size: 20px;
 }
 
 #articles {
@@ -514,7 +559,17 @@ aside span.negrita {
   font-weight: bold;
 }
 
+aside#left2 h2 {
+  font-size: 22px;
+  border-bottom: 0.1px solid grey;
+}
+
+aside#enlaces nav ul li a {
+  font-family: Twitter;
+}
+
 footer {
+  border-top: 2px solid black;
   padding: 0px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
