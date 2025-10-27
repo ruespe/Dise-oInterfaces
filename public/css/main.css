@@ -2,6 +2,8 @@
   --primary-color: #e5e5e5;
   --naranja-chillon: #ec8a1b;
   --blanco: #ffffff;
+  --gris-para-p: #9a9b9c;
+  --negrita: #666565;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -449,6 +451,7 @@ header {
   font-style: normal;
 }
 header {
+  margin: 20px 34px 20px 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,20 +465,38 @@ body {
   font-family: "ArialMT";
 }
 
-nav ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
-ul li {
+ul li a {
   text-decoration: none;
-  list-style-type: none;
+  color: var(--negrita);
+  font-family: Arial;
+  font-size: 12px;
 }
 
-header {
-  padding: 0px 30px;
+header nav ul li a:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 79px;
+  color: #fefefe;
+  height: 27px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef9f46), color-stop(50%, #f3ab5b), to(#f4cfa7));
+  background-image: linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%);
+  border: 1px solid #675f55;
 }
 
 section#section1 {
@@ -523,6 +544,8 @@ p.naranja-chillon {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  font-size: 12px;
+  font-family: Arial;
 }
 
 div.titulo p {
@@ -555,8 +578,33 @@ div.contenidoArticulo {
   display: flex;
 }
 
+div.contenidoArticulo p {
+  font-family: Arial;
+  color: var(--gris-para-p);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+div.contenidoArticulo span.technology {
+  text-decoration: underline;
+  color: var(--negrita);
+}
+
 aside span.negrita {
   font-weight: bold;
+  color: var(--negrita);
+  font-size: 13px;
+}
+
+#section2 aside#left2 {
+  padding-right: 100px;
+}
+
+#section2 aside#left2 p {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gris-para-p);
+  font-family: "Arial";
 }
 
 aside#left2 h2 {
