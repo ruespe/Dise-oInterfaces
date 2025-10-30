@@ -1,3 +1,4 @@
+@import "boxicons/css/boxicons.min.css";
 :root {
   --primary-color: #e5e5e5;
   --naranja-chillon: #ec8a1b;
@@ -644,11 +645,11 @@ footer {
           justify-content: space-between;
 }
 
-footer nav ul {
+nav.footer ul {
   padding: 0;
 }
 
-footer nav ul {
+nav.footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,7 +657,7 @@ footer nav ul {
   list-style: none;
 }
 
-footer nav ul li {
+nav.footer ul li {
   color: var(--negrita);
   border-right: 1px solid var(--negrita);
   height: 10px;
@@ -669,14 +670,18 @@ footer nav ul li {
   padding: 0 10px 0 0;
 }
 
-footer nav ul li:first-child {
+nav.footer ul li:first-child {
   color: #666666;
 }
 
-footer nav ul li:last-child {
+nav.footer ul li:last-child {
   border-right: none;
   padding-right: 0;
   margin-right: 0;
+}
+
+nav.footer ul li a:hover {
+  color: var(--naranja-chillon);
 }
 
 footer aside.footerright p {
