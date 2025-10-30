@@ -59,13 +59,11 @@ aside#right1 {
 aside#right1 h1 {
     font-family: 'Century';
     font-size: 27px;
-    line-height: 18px;
     color: var(--h1color);
     margin-bottom: 0px;
 }
 
 aside#right1 p#uno {
-        font-family: 'Century';
     border-top: 1px solid black;
     margin-top: 10px;
     padding-top: 20px;
@@ -79,6 +77,7 @@ aside#right1 p#dos {
     border-top: 1px solid black;
     padding-top: 20px;
     color: var(--gris-para-p);
+    font-size: 12px;
 }
 
 main {
@@ -166,7 +165,7 @@ aside span.negrita {
     font-size: 12px;
     line-height: 18px;
     color: var(--gris-para-p);
-    font-family: "Arial";
+    font-family: Arial;
 }
 
 aside#left2 h2 {
