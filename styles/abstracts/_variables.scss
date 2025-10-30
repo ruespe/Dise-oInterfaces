@@ -4,8 +4,30 @@
     --blanco: #ffffff;
     --gris-para-p: #9a9b9c;
     --negrita: #666565;
+    --h1color: #363d40;
+    --colorArticleTitulo: #7e7e7e;
+    --pUno: #bcbcbc;
 }
 
+body{
+&.light-mode{
+    --primary-color: #e5e5e5;
+    --naranja-chillon: #ec8a1b;
+    --blanco: #ffffff;
+    --gris-para-p: #9a9b9c;
+    --negrita: #666565;
+}
+
+&.dark-mode{
+    --primary-color: #171a21;
+    --blanco: #2a475e;
+    --h1color: white;
+    --negrita: white;
+    --colorArticleTitulo: white;
+    --gris-para-p: #66c0f4;
+}
+
+}
 // &.light  ejemplo para el modo claro y oscuro
    // --primary-color: var(--orange);
 

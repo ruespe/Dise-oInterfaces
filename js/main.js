@@ -1,9 +1,13 @@
-import 'boxicons/css/boxicons.min.css'
+import "boxicons/css/boxicons.min.css";
 
-document.querySelector("#modos").addEventListener("change", function() {
-    if (this.value === "dark") {
-        document.body.classList.add("dark-mode");
-    } else {
-        document.body.classList.add("light-mode");
-    }
+let botonModo = document.querySelector(".cambiarModo");
+
+botonModo.addEventListener("click", () => {
+  if (document.body.classList.contains("light-mode")) {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+  } else{
+    document.body.classList.remove("dark-mode")
+    document.body.classList.add("light-mode")
+  }
 });
