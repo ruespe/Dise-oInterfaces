@@ -1,5 +1,4 @@
-//import './scss/main.scss';
-
+import 'boxicons/css/boxicons.min.css'
 
 document.querySelector("#modos").addEventListener("change", function() {
     if (this.value === "dark") {
