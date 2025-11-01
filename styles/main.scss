@@ -52,18 +52,18 @@ section#section1 {
 
 }
 
-aside#right1 {
+div#right1 {
     padding: 10px;
 }
 
-aside#right1 h1 {
+div#right1 h1 {
     font-family: 'Century';
     font-size: 27px;
     color: var(--h1color);
     margin-bottom: 0px;
 }
 
-aside#right1 p#uno {
+div#right1 p#uno {
     border-top: 1px solid black;
     margin-top: 10px;
     padding-top: 20px;
@@ -73,7 +73,7 @@ aside#right1 p#uno {
 
 }
 
-aside#right1 p#dos {
+div#right1 p#dos {
     border-top: 1px solid black;
     padding-top: 20px;
     color: var(--gris-para-p);
@@ -151,29 +151,29 @@ div.contenidoArticulo span.technology {
     color: var(--negrita);
 }
 
-aside span.negrita {
+div span.negrita {
     font-weight: bold;
     color: var(--negrita);
     font-size: 13px;
 }
 
-#section2 aside#left2 {
+#section2 div#left2 {
     padding-right: 100px;
 }
 
-#section2 aside#left2 p {
+#section2 div#left2 p {
     font-size: 12px;
     line-height: 18px;
     color: var(--gris-para-p);
     font-family: Arial;
 }
 
-aside#left2 h2 {
+div#left2 h2 {
     font-size: 22px;
     border-bottom: 1px solid grey;
 }
 
-aside#form h2 {
+div#form h2 {
     font-size: 19px;
 }
 
@@ -183,7 +183,7 @@ form {
     justify-content: end;
 }
 
-aside#enlaces h2 {
+div#enlaces h2 {
     font-size: 19px;
 }
 
@@ -249,7 +249,7 @@ nav.footer ul li a:hover {
     color: var(--naranja-chillon);
 }
 
-footer aside.footerright p {
+footer div.footerright p {
     font-size: 12px;
     color: var(--gris-para-p);
     font-family: Arial;
