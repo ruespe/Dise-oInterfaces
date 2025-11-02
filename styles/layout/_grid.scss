@@ -5,9 +5,11 @@
     #section1 {
         grid-area: section1;
     }
-    #left1{
+
+    #left1 {
         grid-area: bannerleft;
     }
+
     #right1 {
         grid-area: bannerright;
     }
@@ -36,6 +38,7 @@
     #section2 {
         grid-area: section2;
     }
+
     #left2 {
         grid-area: left2;
     }
@@ -71,6 +74,17 @@
                 "footer"
             ;
         }
+
+        #articles {
+            display: grid;
+            grid-template-areas:
+                "article1"
+                "article2"
+                "article3"
+            ;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
     }
 
     @media (max-width: 1024px) {
@@ -82,7 +96,7 @@
     @media (min-width: 1025px) and (max-width: 1240px) {
         body {
             display: grid;
-            grid-template-areas: 
+            grid-template-areas:
                 "header"
                 "section1"
                 "articles"
@@ -90,23 +104,25 @@
                 "footer"
             ;
         }
-        #section1{
+
+        #section1 {
             display: grid;
-            grid-template-areas: 
+            grid-template-areas:
                 "bannerleft bannerright"
             ;
         }
-        #articles{
+
+        #articles {
             display: grid;
-            grid-template-areas: 
-            "article1 article2 article3"
+            grid-template-areas:
+                "article1 article2 article3"
             ;
         }
-        #section2{
+
+        #section2 {
             display: grid;
-            grid-template-areas: 
+            grid-template-areas:
                 "left2 right2"
             ;
         }
     }
-

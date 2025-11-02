@@ -456,6 +456,12 @@ header {
     display: grid;
     grid-template-areas: "header" "left1" "right1" "article1" "article2" "article3" "left2" "right2" "footer";
   }
+  #articles {
+    display: grid;
+    grid-template-areas: "article1" "article2" "article3";
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 @media (max-width: 1024px) {
   body {
@@ -542,18 +548,18 @@ section#section1 {
           filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
 }
 
-aside#right1 {
+div#right1 {
   padding: 10px;
 }
 
-aside#right1 h1 {
+div#right1 h1 {
   font-family: "Century";
   font-size: 27px;
   color: var(--h1color);
   margin-bottom: 0px;
 }
 
-aside#right1 p#uno {
+div#right1 p#uno {
   border-top: 1px solid black;
   margin-top: 10px;
   padding-top: 20px;
@@ -562,7 +568,7 @@ aside#right1 p#uno {
   color: var(--pUno);
 }
 
-aside#right1 p#dos {
+div#right1 p#dos {
   border-top: 1px solid black;
   padding-top: 20px;
   color: var(--gris-para-p);
@@ -611,13 +617,14 @@ div#articles {
   margin-top: 24px;
 }
 
-#articles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 25px;
+@media (min-width: 769px) {
+  #articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+  }
 }
-
 div.titulo p {
   font-size: 20px;
   color: var(--colorArticleTitulo);
@@ -647,29 +654,29 @@ div.contenidoArticulo span.technology {
   color: var(--negrita);
 }
 
-aside span.negrita {
+div span.negrita {
   font-weight: bold;
   color: var(--negrita);
   font-size: 13px;
 }
 
-#section2 aside#left2 {
+#section2 div#left2 {
   padding-right: 100px;
 }
 
-#section2 aside#left2 p {
+#section2 div#left2 p {
   font-size: 12px;
   line-height: 18px;
   color: var(--gris-para-p);
   font-family: Arial;
 }
 
-aside#left2 h2 {
+div#left2 h2 {
   font-size: 22px;
   border-bottom: 1px solid grey;
 }
 
-aside#form h2 {
+div#form h2 {
   font-size: 19px;
 }
 
@@ -686,7 +693,13 @@ form {
           justify-content: end;
 }
 
-aside#enlaces h2 {
+aside#right2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 200px;
+}
+
+div#enlaces h2 {
   font-size: 19px;
 }
 
@@ -764,7 +777,7 @@ nav.footer ul li a:hover {
   color: var(--naranja-chillon);
 }
 
-footer aside.footerright p {
+footer div.footerright p {
   font-size: 12px;
   color: var(--gris-para-p);
   font-family: Arial;
