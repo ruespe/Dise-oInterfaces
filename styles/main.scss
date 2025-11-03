@@ -460,9 +460,11 @@ section#contact-page {
     display: flex;
     margin-bottom: 20px;
 }
-
+div#contact-content {
+    margin-left: 100px;
+}
 div.form-group {
-    margin-bottom: 15px;
+    margin-right: 200px;
 }
 
 div.form-group input {
@@ -478,4 +480,11 @@ form#contact-form textarea {
     resize: none;
     background-color: #eeefef;
     border: 1px solid #dddddd;
+}
+div.contact-intro p{
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--gris-para-p);
+    box-sizing: border-box;
+    width: 540px;
 }

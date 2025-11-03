@@ -413,6 +413,10 @@ article div.titulo p {
   font-family: "Century", "Century Gothic", sans-serif;
 }
 
+div.contact-intro p {
+  font-family: Arial;
+}
+
 header {
   grid-area: header;
 }
@@ -1017,8 +1021,12 @@ section#contact-page {
   margin-bottom: 20px;
 }
 
+div#contact-content {
+  margin-left: 100px;
+}
+
 div.form-group {
-  margin-bottom: 15px;
+  margin-right: 200px;
 }
 
 div.form-group input {
@@ -1034,4 +1042,13 @@ form#contact-form textarea {
   resize: none;
   background-color: #eeefef;
   border: 1px solid #dddddd;
+}
+
+div.contact-intro p {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gris-para-p);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 540px;
 }/*# sourceMappingURL=main.css.map */
