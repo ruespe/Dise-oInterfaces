@@ -1,127 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - InfoTech</title>
-    <link rel="stylesheet" href="/styles/main.scss">
-    <link rel="stylesheet" href="/icons/icofont/icofont.min.css">
-</head>
+    <link rel="stylesheet" href="/styles/main.scss" />
+    <link rel="stylesheet" href="/icons/icofont/icofont.min.css" />
+  </head>
 
-<body class="light-mode">
+  <body class="light-mode">
     <header id="header">
-        <div id="logo">
-            <img src="images/INFOTECH - Logo.png" alt="Logo">
-            <i class='bx bx-brightness cambiarModo'></i>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/about.html">ABOUT US</a></li>
-                <li><a href="/solutions.html">SOLUTIONS</a></li>
-                <li><a href="/clients.html">CLIENTS</a></li>
-                <li><a href="/contact.html">CONTACT US</a></li>
-            </ul>
-        </nav>
+      <div id="logo">
+        <img src="images/INFOTECH - Logo.png" alt="Logo" />
+        <i class="bx bx-brightness cambiarModo"></i>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/about.html">ABOUT US</a></li>
+          <li><a href="/solutions.html">SOLUTIONS</a></li>
+          <li><a href="/clients.html">CLIENTS</a></li>
+          <li><a href="/contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="contact-page">
-            <div id="contact-content">
-                <div class="page-header">
-                    <i class='bx bx-phone contact-icon'></i>
-                    <h1>Contact Us</h1>
-                </div>
+      <section id="contact-page">
+        <div id="contact-content">
+          <div class="page-header">
+            <i class="bx bx-phone contact-icon"></i>
+            <h1>Contact Us</h1>
+          </div>
 
-                <div class="contact-intro">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar nisi eu enim facilisis dapibus. Duis viverra turpis vitae dui tincidunt eleifend. Etiam sodales, neque in dignissim dictum, dui libero dictum orci, vel cursus felis velit vitae dui.</p>
-                </div>
+          <div class="contact-intro">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              pulvinar nisi eu enim facilisis dapibus. Duis viverra turpis vitae
+              dui tincidunt eleifend. Etiam sodales, neque in dignissim dictum,
+              dui libero dictum orci, vel cursus felis velit vitae dui.
+            </p>
+          </div>
 
-                <form id="contact-form" method="POST" action="/submit-contact">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email-id">Email - ID</label>
-                        <input type="email" id="email-id" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="company">Company Name</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5"></textarea>
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </div>
-                </form>
+          <form id="contact-form" method="POST" action="/submit-contact">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
             </div>
 
-            <aside id="contact-sidebar">
-                <div class="get-in-touch">
-                    <h2 class="naranja-chillon">Get in Touch</h2>
-                    <ul class="contact-info">
-                        <li><i class='bx bx-map'></i> 9839 Lorem Ipsum</li>
-                        <li><i class='bx bx-map'></i> India, Bangalore</li>
-                        <li><i class='bx bx-map'></i> Asia, India</li>
-                        <li><i class='bx bx-phone'></i> Telephone: +91 - 1234567890</li>
-                        <li><i class='bx bx-envelope'></i> Email: contact@design3edge.com</li>
-                    </ul>
-                </div>
+            <div class="form-group">
+              <label for="email-id">Email - ID</label>
+              <input type="email" id="email-id" name="email" required />
+            </div>
 
-                <div class="social-section">
-                    <h2 class="naranja-chillon">Follow us on</h2>
-                    <nav class="social-links">
-                        <ul>
-                            <li><a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" />
+            </div>
 
-                <div class="testimonials-section">
-                    <h2 class="naranja-chillon">Testimonial</h2>
-                    <div class="testimonial">
-                        <p>Talk to us if you are looking for business savvy online solutions rather than possibilities of technology.</p>
-                        <cite>- Design3edge.com</cite>
-                    </div>
-                </div>
-            </aside>
-        </section>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <aside id="contact-sidebar">
+          <div class="get-in-touch">
+            <h2 class="naranja-chillon">Get in Touch</h2>
+            <ul class="contact-info">
+              <li><i class="bx bx-map"></i> 9839 Lorem Ipsum</li>
+              <li><i class="bx bx-map"></i> India, Bangalore</li>
+              <li><i class="bx bx-map"></i> Asia, India</li>
+              <li><i class="bx bx-phone"></i> Telephone: +91 - 1234567890</li>
+              <li>
+                <i class="bx bx-envelope"></i> Email: contact@design3edge.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="social-section">
+            <h2 class="naranja-chillon">Follow us on</h2>
+            <nav class="social-links">
+              <ul>
+                <li>
+                  <a href="https://twitter.com" target="_blank"
+                    ><i class="bx bxl-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="testimonials-section">
+            <h2 class="naranja-chillon">Testimonial</h2>
+            <div class="testimonial">
+              <p>
+                Talk to us if you are looking for business savvy online
+                solutions rather than possibilities of technology.
+              </p>
+              <cite>- Design3edge.com</cite>
+            </div>
+          </div>
+        </aside>
+      </section>
     </main>
 
     <footer>
-        <div class="footerleft">
-            <nav class="footer">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/solutions.html">Solutions</a></li>
-                    <li><a href="/clients.html">Clients</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footerright">
-            <p>© Copyright Your <span class="naranja-chillon">Site Name. Dot Com.</span> All Rights Reserved </p>
-        </div>
+      <div class="footerleft">
+        <nav class="footer">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/solutions.html">Solutions</a></li>
+            <li><a href="/clients.html">Clients</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footerright">
+        <p>
+          © Copyright Your
+          <span class="naranja-chillon">Site Name. Dot Com.</span> All Rights
+          Reserved
+        </p>
+      </div>
     </footer>
 
     <script type="module" src="/js/main.js"></script>
-</body>
-
+  </body>
 </html>
