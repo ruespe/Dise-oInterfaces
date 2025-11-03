@@ -375,15 +375,36 @@ template {
   font-style: normal;
 }
 h2 {
-  font-family: "Century", "Century Gothic", sans-serif;
+  font-family: "Century";
   font-weight: normal;
 }
 
 aside#right1 p#uno {
-  font-family: "Century", "Century Gothic", sans-serif;
+  font-family: "Century";
 }
 
 aside#right1 p#dos {
+  font-family: Arial;
+}
+
+button {
+  font-family: Arial;
+}
+
+label {
+  font-family: Arial;
+}
+
+div.client-info a.client-url {
+  font-family: "Century";
+  font-weight: bold;
+}
+
+div.client-info p {
+  font-family: Arial;
+}
+
+div.testimonios {
   font-family: Arial;
 }
 
@@ -498,7 +519,22 @@ header {
 
 body {
   background-color: var(--primary-color);
-  font-family: "ArialMT";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1240px;
+  margin: auto;
+}
+
+button {
+  width: 91px;
+  height: 24px;
+  border-radius: 11px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d4d3d3), to(#e9e9e9));
+  background-image: linear-gradient(0deg, #d4d3d3 0%, #e9e9e9 100%);
+  border: 1px solid #c6c6c6;
+  font-size: 12px;
+  color: #787878;
+  margin-top: 8px;
 }
 
 header nav ul {
@@ -573,6 +609,16 @@ div#right1 p#dos {
   padding-top: 20px;
   color: var(--gris-para-p);
   font-size: 12px;
+}
+
+div#botonSection1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 10px;
 }
 
 main {
@@ -693,10 +739,16 @@ form {
           justify-content: end;
 }
 
+label {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gris-para-p);
+}
+
 aside#right2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 200px;
+  max-width: 236px;
 }
 
 div#enlaces h2 {
@@ -782,4 +834,94 @@ footer div.footerright p {
   color: var(--gris-para-p);
   font-family: Arial;
   line-height: 18px;
+}
+
+section#clients-page {
+  background-color: var(--blanco);
+  border-radius: 8px;
+  -webkit-filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+          filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+  padding: 20px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+div.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+div.page-header h1 {
+  font-family: "Century";
+  font-size: 22px;
+  color: var(--naranja-chillon);
+  font-weight: normal;
+}
+
+div#columna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+
+article.client-card {
+  border: 1px solid #e1e0e0;
+  border-radius: 6px;
+  -webkit-filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+          filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 271px;
+  height: 220px;
+}
+
+div.client-image {
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+div.client-info {
+  margin-top: 20px;
+}
+
+div.client-info a.client-url {
+  text-decoration: none;
+  color: var(--negrita);
+  font-size: 12px;
+}
+
+div.client-info p {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gris-para-p);
+}
+
+aside#clients-sidebar {
+  margin-left: 40px;
+}
+
+div.testimonials-section h2 {
+  font-size: 19px;
+}
+
+div.testimonial p {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gris-para-p);
+}
+
+div.testimonial span {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  color: var(--negrita);
 }/*# sourceMappingURL=main.css.map */

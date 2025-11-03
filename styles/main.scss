@@ -286,3 +286,76 @@ footer div.footerright p {
     font-family: Arial;
     line-height: 18px;
 }
+
+// Clients
+
+section#clients-page {
+    background-color: var(--blanco);
+    border-radius: 8px;
+    filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+div.page-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+div.page-header h1{
+    font-family: 'Century';
+    font-size: 22px;
+    color: var(--naranja-chillon);
+    font-weight: normal;
+}
+
+div#columna {
+    display: flex;
+    gap: 60px;
+}
+
+
+article.client-card {
+    border: 1px solid #e1e0e0;
+    border-radius: 6px;
+    filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+    box-sizing: border-box;
+    width: 271px;
+    height: 220px;
+}
+div.client-image {
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+div.client-info {
+    margin-top: 20px;
+}
+div.client-info a.client-url {
+    text-decoration: none;
+    color: var(--negrita);
+    font-size: 12px;
+}
+div.client-info p {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--gris-para-p);
+}
+
+aside#clients-sidebar{
+    margin-left: 40px;
+}
+div.testimonials-section h2{
+    font-size: 19px;
+}
+div.testimonial p{
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--gris-para-p);
+}
+div.testimonial span{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    color: var(--negrita);
+}

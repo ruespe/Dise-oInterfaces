@@ -23,8 +23,16 @@ button {
 label {
     font-family: Arial;
 }
-
-
+div.client-info a.client-url {
+    font-family: 'Century';
+    font-weight: bold;
+}
+div.client-info p {
+    font-family: Arial;
+}
+div.testimonios {
+    font-family: Arial;
+}
 article div.titulo p{
     font-family: 'Century', 'Century Gothic', sans-serif;
 }
