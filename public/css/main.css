@@ -1201,9 +1201,6 @@ footer aside.footerright p {
   article.client-card {
     max-width: 100%;
   }
-  .contact-intro p {
-    width: 100% !important;
-  }
 }
 section#clients-page {
   background-color: var(--blanco);
