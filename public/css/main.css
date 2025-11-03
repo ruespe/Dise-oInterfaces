@@ -924,4 +924,36 @@ div.testimonial span {
   font-weight: bold;
   line-height: 18px;
   color: var(--negrita);
+}
+
+section#contact-page {
+  background-color: var(--blanco);
+  border-radius: 8px;
+  -webkit-filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+          filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+  padding: 20px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+div.form-group {
+  margin-bottom: 15px;
+}
+
+div.form-group input {
+  width: 360px;
+  height: 26px;
+  background-color: #eeefef;
+  border: 1px solid #dddddd;
+}
+
+form#contact-form textarea {
+  width: 422px;
+  height: 92px;
+  resize: none;
+  background-color: #eeefef;
+  border: 1px solid #dddddd;
 }/*# sourceMappingURL=main.css.map */
